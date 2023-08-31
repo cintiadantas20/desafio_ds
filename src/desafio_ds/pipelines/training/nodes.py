@@ -75,7 +75,7 @@ def train_arima_model (estacionarios, nao_estacionarios, dataframes_treino):
     
     Args:
         estacionarios: lista dos países estacionários pelo teste ADF
-        nao_estacionarios:lista dos países NÃO estacionários pelo teste ADF
+        nao_estacionarios:lista dos países não estacionários pelo teste ADF
         dataframes_treino: dicionário com um dataframe por país, para a etapa de treino do modelo
         
     Returns:
