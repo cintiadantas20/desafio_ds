@@ -21,7 +21,7 @@ df_filled:
 # Final datasets
 df_previsoes:
   type: pandas.CSVDataSet
-  filepath: data/07_model_output/previsoes.csv
+  filepath: data/07_model_output/predicted.csv
   load_args:
     sep: ","
   save_args:
