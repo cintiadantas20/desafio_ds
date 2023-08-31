@@ -25,7 +25,6 @@ def create_pipeline(**kwargs) -> Pipeline:
                     "nao_estacionarios": "nao_estacionarios",
                     "df_filled": "df_filled"},
             outputs="df_previsoes",
-            # outputs=None,
             name="save_prediction",
         ),          
     ])
