@@ -87,15 +87,13 @@ def train_arima_model (estacionarios, nao_estacionarios, dataframes_treino):
     # Itera sobre os países que estão na lista dos estacionários e treina o modelo ARIMA para cada dataframe
     for pais in estacionarios:
         df_treino = dataframes_treino[pais]
-        modelo = ARIMA(endog=df_treino['pib'], order=(1, 1, 1)).fit()
+        modelo = ARIMA(endog=df_treino['pib'], order=(1, 0, 1)).fit()
         modelos_arima[pais] = modelo
 
     # Itera sobre os países que estão na lista dos não estacionários e treina o modelo ARIMA para cada dataframe
     for pais in nao_estacionarios:
         df_treino = dataframes_treino[pais]
-        modelo = ARIMA(endog=df_treino['pib'], order=(1, 0, 1)).fit()
+        modelo = ARIMA(endog=df_treino['pib'], order=(1, 1, 1)).fit()
         modelos_arima[pais] = modelo
-
-    print(modelos_arima)
 
     return modelos_arima
