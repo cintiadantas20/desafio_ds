@@ -1,0 +1,5 @@
+lista_regioes: ['Africa (Region)', 'Asia and Pacific', 'Australia and New Zealand', 'Caribbean', 'Central America', 'Central Asia and the Caucasus', 'East Asia', 'Eastern Europe ', 'Europe', 'Middle East (Region)', 'North Africa', 'North America', 'Pacific Islands ', 'South America', 'South Asia', 'Southeast Asia', 'Sub-Saharan Africa (Region) ', 'Western Europe', 'Western Hemisphere (Region)', 'ASEAN-5', 'Advanced economies', 'Emerging and Developing Asia', 'Emerging and Developing Europe', 'Emerging market and developing economies', 'Euro area', 'European Union', 'Latin America and the Caribbean', 'Major advanced economies (G7)', 'Middle East and Central Asia', 'Other advanced economies', 'Sub-Saharan Africa', 'World',]
+
+n_neighbors: 3
+
+weights: 'distance'
