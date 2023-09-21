@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 def generate_prediction(dataframes_teste, modelos_arima):
-    """Este nó gera a predição para o dataset de treino
+    """Este nó gera a predição para o dataset de teste
     
     Args:
         dataframes_teste: dataset de teste para a previsão
@@ -19,7 +19,7 @@ def generate_prediction(dataframes_teste, modelos_arima):
     
     dataframes_dados_teste = dataframes_teste.copy()
 
-    # Itera sobre o dicionário com os modelos para os dataframes de teste e fas as previsões para esse dataframe
+    # Itera sobre o dicionário com os modelos para os dataframes de teste e faz as previsões para esse dataframe
     for pais, modelo in modelos_arima.items():
         df_teste = dataframes_dados_teste[pais]
         previsoes_teste = modelo.predict(start=df_teste.index.min(), end=df_teste.index.max())
